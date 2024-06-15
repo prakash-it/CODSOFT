@@ -44,12 +44,12 @@
     border-radius: 30px;
     font-size: 1rem;
     color: var(--primary-color);
-    background-color: #04AA6D;
+    background-color: #ff9100;
     cursor: pointer;
   }
   
   .btn:hover {
-    background-color: #037a53; 
+    background-color: #ff7300; 
     color: #fff; 
   }
   
@@ -131,6 +131,7 @@ header {
 
 .header-container {
   padding: 12rem 1rem;
+  
 }
 
 .header-container h1 {
@@ -157,6 +158,55 @@ header {
   height: 2px;
   width: 2rem;
   background-color: var(--white);
+}
+
+/* About Style  */
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-container :is(.section-header, .section-subheader) {
+  text-align: left;
+}
+
+.about-flex {
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: var(--primary-color-light);
+}
+
+.about-card {
+  flex: 1 1 150px;
+  text-align: center;
+  border-right: 2px solid var(--primary-color);
+}
+
+.about-card:last-child {
+  border: none;
+}
+
+.about-card h4 {
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+}
+
+.about-card p {
+  font-size: 0.9rem;
+}
+
+.about-image img {
+  max-width: 450px;
+  margin: auto;
 }
 
 
