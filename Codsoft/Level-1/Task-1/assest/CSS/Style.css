@@ -49,7 +49,7 @@
   }
   
   .btn:hover {
-    background-color: #ff7300; 
+    background-color: #ff6600; 
     color: #fff; 
   }
   
@@ -208,6 +208,86 @@ header {
   max-width: 450px;
   margin: auto;
 }
+
+.btn2 {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: #00ccff;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: #ff5e00; 
+  color: #fff; 
+}
+
+/* Discover style */
+.discover
+{
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.05),transparent);
+}
+.discover-grid{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.discover-card
+{
+  max-width: 320px;
+  margin: auto;
+}
+.discover-card:nth-child(2)
+{
+  transform: translateY(5rem);
+}
+.discover-image
+{
+  position: relative;
+}
+
+.discover-image::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, var(--primary-color),transparent);
+}
+.discover-card-content
+{
+  padding: 0 2rem;
+  transform: translateY(-50%);
+}
+
+.discover-card-content h4{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--secondary-color);
+}
+
+.discover-card-content p {
+  margin-bottom: 2rem;
+}
+.discover-btn
+{
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  cursor: pointer; 
+}
+
 
 
 /* footer style  */
