@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -15,12 +15,12 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skill</a>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
            
         </nav>
 
-        <a href="" class="contact">Contact</a>
+        <a href="#contact" class="contact">Contact</a>
     </header>
 
     <section class="home" id="home">
@@ -30,26 +30,26 @@
             <p>Developer with a proven skills to collaborate effectively with senior developers while spending extra time to be mentored. With a passion for both personal growth and for software development, and many more....</p>
         
         <div class="btn-box">
-            <button class="btn-1">Hire Me</button>
-            <button class="btn-2">Experience</button>
+           <a href="#contact"> <button class="btn-1">Hire Me</button></a>
+          <a href="#projects">  <button class="btn-2">Experience</button></a>
         </div>
     </div>
         <div class="img-box">
-            <img src="Prakash.K.jpg" alt="Prakash K">
+            <img src="img/Prakash.K.jpg" alt="Prakash K">
         </div>
    
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="Prakash.K.jpg" alt="">
+            <img src="img/Prakash.K.jpg" alt="">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3><span>DEVELOPER</span></h3>
             <P>To use my skills and experience in a progressive company where I can tackle challenges, help achieve goals, and grow professionally by learning and innovating. I'm excited about using new technologies and methods to help the company succeed and move my career forward.</P>
-            <a href="" class="btn-2"> Experience</a>
+            <a href="#projects" class="btn-2"> Experience</a>
         </div>
     </section>
 
@@ -74,7 +74,7 @@
                     <div class="skill">
                         <h4>JavaScript</h4>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 85%;">85%</div>
+                            <div class="progress-bar" style="width: 65%;">65%</div>
                         </div>
                     </div>
                     <div class="skill">
@@ -109,10 +109,38 @@
         </div>
     </section>
     
+
+  
+    <section class="projects" id="projects">
+        <div class="projects-content">
+            <h2 class="heading">My <span>Projects</span></h2>
+            <div class="row">
+                <div class="col">
+            <div class="project-card">
+                <img src="img/Bus-Route.png" alt="Project 1">
+                <h3>Bus-Route</h3>
+                <p>This project is based on  buses route time in the bus stand and using technology is 'Reactjs' 'Nodejs' 'Expressjs' 'MongoDB'.</p>
+            </div></div>
+            <div class="col">
+            <div class="project-card">
+                <img src="img/HCB.png" alt="Project 2">
+                <h3>Dental Care web-site</h3>
+                <p>Dental care is know the docter and hospital,This project is based on a HTML, CSS. BOOTSTART and JavaScript.</p>
+            </div></div>
+            <div class="col">
+            <div class="project-card">
+                <img src="img/PC.png" alt="Project 3">
+                <h3>Portfolio</h3>
+                <p>My Personal portfolio web-site of my skils  is based on HTML CSS JavaScript.</p>
+            </div></div>
+        </div>
+    </div>
+    </section>
+
     
     <section class="resume" id="resume">
         <div class="resume-img">
-            <img src="img.png" alt="">
+            <img src="img/img.png" alt="">
         </div>
         <div class="about-content">
             <h2 class="heading">My <span>Resume</span></h2>
@@ -122,5 +150,28 @@
         </div>
     </section>
 
+
+    <section class="contact-form" id="contact">
+        <h2 class="contact-me">
+            Contact <span>Me</span>
+        </h2>
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" role="10" placeholder="Message"></textarea>
+       
+            <input type="submit" value="send Message" class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Prakash K. All rights reserved.</p>
+    </footer>
 </body>
 </html>
